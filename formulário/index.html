@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <header>
+        <nav>
+            <ul>
+                <li><span>Inscrições</span></li>
+                <li><a href="list_User.html">Lista de Inscritos</a></li>
+            </ul>
+        </nav>
+        <section>
+             <h1>Fomulário de inscrição</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint delectus eveniet tempora ea quis, neque expedita!</p>
+        <hr>
+        </section>
+    </header>
+
+    <main>
+        <form id="formulario">
+
+            <div>
+                <p class="label">Insira o seu e-mail</p>
+                <input id="email" type="email" placeholder="ex: joao@gmail.com">
+            </div>
+            <div>
+                <p class="label">Insira uma senha</p>
+                <input id="senha" type="password" placeholder="ex: 12345678"">
+            </div>
+            <div>
+                <p class="label">Insira um nome de perfil</p>
+                <input id="nome" type="text" placeholder="ex: Jhony">
+            </div>
+            <div>
+                <p class="label">Selecione uma categoria</p>
+                <select name="opcao" id="">
+                    <option value="Lutador">Lutador</option>
+                    <option value="Estrategista">Estrategista</option>
+                    <option value="Mago">Mago</option>
+                </select>
+            </div>
+
+            <div>
+                <button onclick=obterDado(event)>Salvar</button>
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
